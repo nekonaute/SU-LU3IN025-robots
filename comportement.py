@@ -15,9 +15,12 @@ import paintwars_arena
 
 def step(robotId, sensors):
 
-    # sensors: la valeur de chaque senseur renvoie le distance à l'obstacle (entre 0  et 1, distance max)
-    #print (sensors) # permet de voir la structure du dictionnaire de senseurs
-    print ("[robot #",robotId,"] senseur frontal:",sensors["sensor_front"]["distance"])
+    # sensors: dictionnaire contenant toutes les informations senseurs
+    # Chaque senseur renvoie:
+    #   la distance à l'obstacle (entre 0  et 1, distance max)
+    #   si c'est un robot ou pas
+    # cf. exemple ci-dessous
+    print ("[robot #",robotId,"] senseur frontal:",sensors["sensor_front"]["distance"],"(robot =",sensors["sensor_front"]["isRobot"],")")
 
     translation = 0.5 # vitesse de translation (entre -1 et +1)
     rotation = 0.3 # vitesse de rotation (entre -1 et +1)
@@ -78,14 +81,14 @@ class MyController(Controller):
 
         sensors = {}
 
-        sensors["sensor_left"] = {"distance": self.get_distance_at(0)}
-        sensors["sensor_front_left"] = {"distance": self.get_distance_at(1)}
-        sensors["sensor_front"] = {"distance": self.get_distance_at(2)}
-        sensors["sensor_front_right"] = {"distance": self.get_distance_at(3)}
-        sensors["sensor_right"] = {"distance": self.get_distance_at(4)}
-        sensors["sensor_back_right"] = {"distance": self.get_distance_at(5)}
-        sensors["sensor_back"] = {"distance": self.get_distance_at(6)}
-        sensors["sensor_back_left"] = {"distance": self.get_distance_at(7)}
+        sensors["sensor_left"] = {"distance": self.get_distance_at(0), "isRobot": self.get_robot_id_at(0) != -1}
+        sensors["sensor_front_left"] = {"distance": self.get_distance_at(1), "isRobot": self.get_robot_id_at(1) != -1}
+        sensors["sensor_front"] = {"distance": self.get_distance_at(2), "isRobot": self.get_robot_id_at(2) != -1}
+        sensors["sensor_front_right"] = {"distance": self.get_distance_at(3), "isRobot": self.get_robot_id_at(3) != -1}
+        sensors["sensor_right"] = {"distance": self.get_distance_at(4), "isRobot": self.get_robot_id_at(4) != -1}
+        sensors["sensor_back_right"] = {"distance": self.get_distance_at(5), "isRobot": self.get_robot_id_at(5) != -1}
+        sensors["sensor_back"] = {"distance": self.get_distance_at(6), "isRobot": self.get_robot_id_at(6) != -1}
+        sensors["sensor_back_left"] = {"distance": self.get_distance_at(7), "isRobot": self.get_robot_id_at(7) != -1}
 
         translation, rotation = step(self.id, sensors)
 
