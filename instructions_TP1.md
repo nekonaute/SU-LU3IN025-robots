@@ -9,7 +9,7 @@ Comme vu dans les cours, il s'agit d'une méthode de programmation de comporteme
 * les connexions entre senseurs et effecteurs sont excitatrice (x1), inhibitrice (x-1) ou neutre (pas de connexion)
 * comme vu dans le cours, un comportement de Braitenberg n'utilise **jamais** de structures conditionnelles (type if-then-else)
 
-Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle. On utilisera pour l'instant 3 senseurs seulement, comme dans l'exemple.
+Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle.
 
 En partant du code disponible dans le fichier comportement.py, vous devez programmer les comportements suivants:
 
