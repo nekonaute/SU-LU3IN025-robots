@@ -13,11 +13,11 @@ Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translatio
 
 En partant du code disponible dans le fichier comportement.py, vous devez programmer les comportements suivants:
 
-* comportement "éviter les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
-* comportement "aller vers les murs et ignorer les robots", (fichier _braitenberg_loveWall.py_, à créer)
-* comportement "éviter les murs et ignorer les robots", (fichier _braitenberg_hateWall.py_, à créer)
-* comportement "aller vers les robots et ignorer les murs" (fichier _braitenberg_loveBot.py_, à créer)
-* comportement "éviter les autres robots et ignorer les murs" (fichier _braitenberg_hateBot.py_, à créer).
+* comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
+* comportement "va vers les murs et ignore les robots", (fichier _braitenberg_loveWall.py_, à créer)
+* comportement "évite les murs et ignore les robots", (fichier _braitenberg_hateWall.py_, à créer)
+* comportement "va vers les robots et ignore les murs" (fichier _braitenberg_loveBot.py_, à créer)
+* comportement "évite les autres robots et ignore les murs" (fichier _braitenberg_hateBot.py_, à créer).
 
 Remarque: "ignorer" signifie que l'objet est comme transparent (donc pas de connexion).
 
@@ -25,11 +25,11 @@ Remarque: "ignorer" signifie que l'objet est comme transparent (donc pas de conn
 
 Vous devez maintenant implémenter une architecture de Subsomption permettant à un robot de poursuivre les autres.
 
-Définissez les règles d'activation et l'ordre de priorité entre comportement de type Braitenberg afin qu'un robot évite les murs et fonce sur un robot s'il en voit un.
+Définissez les règles d'activation et l'ordre de priorité entre comportements de type Braitenberg afin qu'un robot évite les murs et fonce sur un robot s'il en voit un.
 
 Vous pouvez utiliser les comportements suivants:
 * aller tout droit (nouveau comportement)
-* éviter les murs (comportement no.3)
-* aller vers les robots (comportement no.4)
+* éviter les murs (comportement _hatewall_)
+* aller vers les robots (comportement _lovebot_)
 
 Coder votre résultat dans un fichier _subsomption.py_ (en copiant le fichier _comportement.py_ pour commencer).
