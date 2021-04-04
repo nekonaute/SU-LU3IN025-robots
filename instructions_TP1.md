@@ -19,7 +19,9 @@ En partant du code disponible dans le fichier comportement (que vous copierez), 
 * comportement "va vers les robots et ignore les murs" (fichier _braitenberg_loveBot.py_, à créer)
 * comportement "évite les autres robots et ignore les murs" (fichier _braitenberg_hateBot.py_, à créer).
 
-Remarque: "ignorer" signifie que l'objet est comme transparent (donc pas de connexion).
+Remarques: 
+* "ignorer" signifie que l'objet est comme transparent (donc pas de connexion).
+* même si ce n'est pas olbigatoire, il est possible de répondre à l'ensemble des questions en utilisant uniquement les senseurs _sensor_front_, _sensor_front_right_ et _sensor_front_left_
 
 ## Exercice 2: architecture de subsomption
 
