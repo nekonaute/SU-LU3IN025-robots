@@ -11,7 +11,7 @@ Comme vu dans les cours, il s'agit d'une méthode de programmation de comporteme
 
 Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle, et détecte s'il s'agit d'un autre robot ou non.
 
-En partant du code disponible dans le fichier comportement.py, vous devez programmer les comportements suivants:
+En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier:
 
 * comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
 * comportement "va vers les murs et ignore les robots", (fichier _braitenberg_loveWall.py_, à créer)
@@ -25,7 +25,7 @@ Remarque: "ignorer" signifie que l'objet est comme transparent (donc pas de conn
 
 Vous devez maintenant implémenter une architecture de Subsomption permettant à un robot de poursuivre les autres.
 
-Définissez les règles d'activation et l'ordre de priorité entre comportements de type Braitenberg afin qu'un robot évite les murs et fonce sur un robot s'il en voit un.
+Définissez les règles d'activation et l'ordre de priorité entre comportements de type Braitenberg afin qu'un robot évite les murs et fonce sur un robot s'il en voit un. Vous ne modifierez que la fonction _step_ en début du fichier, mais vous pouvez rajouter d'autres fonctions si vous le souhaitez (par exemple pour chaque comportement de Braitenberg que vous allez utiliser).
 
 Vous pouvez utiliser les comportements suivants:
 * aller tout droit (nouveau comportement)
