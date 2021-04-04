@@ -1,0 +1,12 @@
+syntaxe:
+    python plot.py exemple.csv 0 1   --- pour afficher les données issues d'un seul fichier
+    python plot.py data/*.csv 0 1    --- pour compiler et afficher les données issues de plusieurs (>=5) fichiers.
+
+aide:
+    python plot.py -h
+
+remarques:
+    utiliser python 3.x, requiert l'installation de matplotlib (et éventuellement du package seaborn)
+    le fichier csv contient des valeurs séparées par des virgules
+    les deux paramètres numériques représentent respectivement les données pour l'axe des x (p.ex: le numéro de l'itération) et l'axe des y (p.ex.: le nombre de cases vertes)
+

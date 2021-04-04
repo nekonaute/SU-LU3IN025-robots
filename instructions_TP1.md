@@ -35,3 +35,7 @@ Vous pouvez utiliser les comportements suivants:
 * aller vers les robots (comportement _lovebot_)
 
 Coder votre résultat dans un fichier _subsomption.py_ (en copiant le fichier _comportement.py_ pour commencer).
+
+## Quelques idées pour le projet
+
+Utiliser une architecture de subsomption (ou un arbre de comportement) est un bon moyen d'organiser vos différents comportements de base. Cela permet aussi de se concentrer sur la conception de comportements spécialisés (i.e. peu complexe mais efficace dans un contexte particulier).
