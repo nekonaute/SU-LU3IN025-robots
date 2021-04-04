@@ -10,7 +10,7 @@ Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/r
 Ce repository contient trois fichiers décrivant les sujets des deux TPs et le sujet de projet.
 
 * [instructions_TP1.md](instructions_TP1.md): TP sur la conception de comportement. Braitenberg et architecture de subsomption.
-* [instructions_TP2.md](instructions_TP2.md): TP sur l'évolution de comportement pour un robot autonome.
+* [instructions_TP2.md](instructions_TP2.md): TP sur l'optimisation de comportement pour un robot autonome (recherche aléatoire, puis algorithme génétique).
 * [instructions_projet.md](instructions_projet.md): description du projet.
 
 Bon courage !
