@@ -31,7 +31,7 @@ Remarque:
 
 ## Exercice 3: algorithme génétique
 
-Créez le fichier _geneticalgorithms.py_ en copiant le précédent, et implémentez un algorithme génétique à la place de la recherche aléatoire comme vu en cours:
+Créez le fichier _genetic_algorithms.py_ (en copiant le précédent) et implémentez un algorithme génétique à la place de la recherche aléatoire, comme vu en cours:
 * opérateur de sélection: _( mu=1 + lambda=1 )_
 * opérateur de mutation: sélection d'un paramètre au hasard, et remplacement de sa valeur au hasard sans retirage (c'est à dire que la nouvelle valeur est forcément différente de la précédente)
 
@@ -67,5 +67,6 @@ Remarques:
   * score = somme_sur_toutes_les_iterations ( vitesse_de_translation * ( 1 - abs(vitesse_de_rotation) ) ) 
 * implémentez une fonction score calculant la couverture de l'environnement, par exemple en le découpant en cases (cf. projet)
 * implémentez un opérateur de sélection (mu=5,lambda=20)
+* modifiez l'opérateur de mutation afin d'explorer un taux de mutation plus élevé
 
 L'algorithme génétique peut vous permettre de trouver une solution exploitable pour votre projet, à condition de bien définir la fonction score (pour guider la recherche) et les conditions d'expérience (pour garantir l'aspect générique de la solution).
