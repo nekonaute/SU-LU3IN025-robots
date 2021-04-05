@@ -9,7 +9,7 @@ Comme vu dans les cours, il s'agit d'une méthode de programmation de comporteme
 * une connexion entre unsenseur et un effecteur peut être soit excitatrice, inhibitrice ou absente
 * comme vu dans le cours, un comportement de Braitenberg n'utilise **jamais** de structures conditionnelles (type if-then-else)
 
-Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle, et détecte s'il s'agit d'un autre robot ou non.
+Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance au mur ou au robot le plus proche (1.0 si absent). Cf. exemple dans le code.
 
 En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier. Seules les deux lignes marquées "_A MODIFIER_" doivent être changées.
 
