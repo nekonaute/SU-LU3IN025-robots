@@ -38,7 +38,7 @@ Coder votre résultat dans un fichier _subsomption.py_ (en copiant le fichier _c
 
 Remarques:
 * si tous vos robots suivent ce nouveau comportement, on s'attend à ce que les robots forment des aggrégats (puisqu'ils vont rentrer en collision).
-* vous pouvez tester un comportement de suivi en n'exécutant ce comportement que sur un robot. Pour cela, il est possible d'utiliser la variable _robotId_ disponible dans la fonction _step_ qui donne le numéro d'identifiant du robot. Ainsi, vous pouvez décider par exemple que seul le robot no.0 utilise l'architecture de subsomption alors que tous les autres utilises le comportement d'évitement d'obstacle écrit dans l'exercice précédent.
+* vous pouvez tester un comportement de suivi en n'exécutant ce comportement que sur un robot. Pour cela, il est possible d'utiliser la variable _robotId_ disponible dans la fonction _step_ qui donne le numéro d'identifiant du robot. Vous pouvez par exemple décider que seul le robot no.0 utilise l'architecture de subsomption, alors que tous les autres utilisent le comportement d'évitement d'obstacle codé dans l'exercice précédent.
 
 ## Quelques idées pour le projet
 
