@@ -6,7 +6,7 @@ Vous devez programmer des comportements de type Braitenberg.
 
 Comme vu dans les cours, il s'agit d'une méthode de programmation de comportement reposant sur des principes simples:
 * les _effecteurs_ dépendent de la somme des activations des _senseurs_
-* les connexions entre senseurs et effecteurs sont excitatrices (x1), inhibitrices (x-1) ou neutre (x0, pas de connexion)
+* une connexion entre unsenseur et un effecteur peut être soit excitatrice, inhibitrice ou absente
 * comme vu dans le cours, un comportement de Braitenberg n'utilise **jamais** de structures conditionnelles (type if-then-else)
 
 Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle, et détecte s'il s'agit d'un autre robot ou non.
