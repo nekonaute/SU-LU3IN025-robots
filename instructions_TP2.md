@@ -10,17 +10,15 @@ On considère que chaque paramètre peut prendre la valeur -1 (inhibition), +1 (
 
 Le score d'un individu dépend de la distance euclidienne parcourue en 400 itérations depuis la position initiale au centre de l'écran.
 
-
-Créez le fichier _randomsearch.py_ (en copiant _optimisation.py_), puis modifiez le fichier comme suit:
-* définition une variable _evaluations_ (=500), qui permettra de fixer combien de comportements seront générés aléatoirement et évalués.
-* à chaque fois qu'un comportement est meilleur que les précédents, sauvegardez-le (score, valeur des paramètres et itération ou il a été trouvé).
-* après avoir épuisé le budget d'évaluations, rejouez le meilleur comportement trouvé pendant _1000_ itérations, puis recommencez (i.e. le comportement est réévalué à l'infini).
+Créez le fichier _randomsearch.py_ (en copiant _optimisation.py_), puis modifiez le comme suit:
+* utilisez la variable _evaluations_ déjà créée pour fixer le nombre de comportements générés aléatoirement et évalués.
+* à chaque fois qu'un comportement est meilleur que les précédents, sauvegardez-le (score, valeur des paramètres et _itération_ ou il a été créé).
+* après avoir épuisé le budget d'évaluations, rejouez le meilleur comportement trouvé pendant _1000_ itérations, puis recommencez (i.e. le meilleur comportement est réévalué à l'infini).
 
 Remarques:
-* la variable _simulation_mode_ permet de régler la vitesse de la simulation. Pratique pour faire une recherche rapide.
-* pendant la simulation, la touche _d_ permet de changer la vitesse de simulation. Pratique pour voir le meilleur comportement à vitesse normale.
-* pendant la simulation, la touche _d_ permet de changer la vitesse de simulation. Pratique pour voir le meilleur comportement à vitesse normale.
-* n'oubliez pas de sauvegarder votre meilleur individu (p.ex. en affichant ses paramètres dans le terminal)
+* la variable _simulation_mode_ permet de régler la vitesse de la simulation au démarrage. Pratique pour faire une recherche rapide (valeur 1, voire 2).
+* pendant la simulation, la touche _d_ permet de changer la vitesse de simulation. Pratique pour observer le meilleur comportement à vitesse normale.
+* n'oubliez pas de sauvegarder votre meilleur individu quelque part (p.ex. en affichant ses paramètres dans le terminal)
 
 ## Exercice 2: effet des conditions initiales
 
