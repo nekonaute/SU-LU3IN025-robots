@@ -32,15 +32,15 @@ Autres fichiers, à ne pas modifier.
 
 ## Evaluation
 
-Lors de la dernière séance de TP, vous présenterez votre travail pendant une interview de 15 minutes environ, en faisant tourner votre code sur écran partagé.
+Lors de la dernière séance de TP, vous présenterez votre travail pendant une interview de 15 minutes environ, en faisant tourner votre code. 
 
-Vous devrez :
+On vous demandera de:
 * présenter les résultats de votre stratégie préférée contre l'équipe _paintwars_team_champion_. Pour chacun des 5 labyrinthes, vous devrez faire deux essais (équipe rouge démarrant à gauche, puis à droite);
 * même chose, mais sur 5 nouveaux labyrinthes inédits;
 * expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base;
 * répondre aux questions qui pourront porter sur le code et sur les méthodes utilisées ou vues en cours.
 
-De plus, vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur les 10 labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus).
+Pendant la séance (hors interview), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur les 10 labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus).
 
 Vous reporterez les résultats du tournoi sur un document partagé prévu à cet effet.
 
