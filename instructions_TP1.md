@@ -11,7 +11,7 @@ Comme vu dans les cours, il s'agit d'une méthode de programmation de comporteme
 
 Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle, et détecte s'il s'agit d'un autre robot ou non.
 
-En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier (~ligne 15, encadrée pas deux blocs de commentaire):
+En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier. Seules les deux lignes marquées "_A MODIFIER_" doivent être changées.
 
 * comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
 * comportement "va vers les murs et ignore les robots", (fichier _braitenberg_loveWall.py_, à créer)
@@ -21,7 +21,7 @@ En partant du code disponible dans le fichier comportement (que vous copierez), 
 
 Remarques: 
 * "ignorer" signifie que l'objet est comme transparent (donc pas de connexion).
-* même si ce n'est pas olbigatoire, il est possible de répondre à l'ensemble des questions en utilisant uniquement les senseurs _sensor_front_, _sensor_front_right_ et _sensor_front_left_
+* même si ce n'est pas obligatoire, il est possible de répondre à l'ensemble des questions en utilisant uniquement les senseurs _sensor_front_, _sensor_front_right_ et _sensor_front_left_
 
 ## Exercice 2: architecture de subsomption
 
