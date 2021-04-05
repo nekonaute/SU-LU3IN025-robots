@@ -4,7 +4,7 @@
 
 Etudiez la fonction _step_ du fichier _optimisation.py_. 
 
-Cette fonction montre comment faire une recherche aléatoire dans l'espace des paramètres d'un réseau de neurones artificiels simple (un Perceptron sans couche cachée utilisant une fonction d'activation linéaire par morceau).
+Cette fonction montre comment faire une recherche aléatoire dans l'espace des paramètres d'un réseau de neurones artificiels simple (un Perceptron sans couche cachée utilisant une fonction d'activation tangente hyperbolique).
 
 On considère que chaque paramètre peut prendre la valeur -1 (inhibition), +1 (excitation) ou 0 (pas de connexion).
 
