@@ -4,7 +4,7 @@
 # Arena
 import paintwars_arena
 get_arena = paintwars_arena.get_arena
-arenaIndexSelector = 4 # numéro de l'arène, entre 0 et 4
+arenaIndexSelector = 0 # numéro de l'arène, entre 0 et 4
 
 # Starting position
 invertStartingPosition = False # True: red commence à gauche. Sinon, commence à droite.

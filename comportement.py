@@ -13,17 +13,51 @@ import paintwars_arena
 
 # =-=-=-=-=-=-=-=-=-= NE RIEN MODIFIER *AVANT* CETTE LIGNE =-=-=-=-=-=-=-=-=-=
 
-def step(robotId, sensors):
+def get_extended_sensors(sensors):
+    for key in sensors:
+        sensors[key]["distance_to_robot"] = 1.0
+        sensors[key]["distance_to_wall"] = 1.0
+        if sensors[key]["isRobot"] == True:
+            sensors[key]["distance_to_robot"] = sensors[key]["distance"]
+        else:
+            sensors[key]["distance_to_wall"] = sensors[key]["distance"]
+    return sensors
+
+def step(robotId, sensors): # <<<<<<<<<------- fonction à modifier pour le TP1
 
     # sensors: dictionnaire contenant toutes les informations senseurs
     # Chaque senseur renvoie:
     #   la distance à l'obstacle (entre 0  et 1, distance max)
-    #   si c'est un robot ou pas
+    #   s'il s'agit d'un robot ou non
+    #   la distance au robot (= 1.0 s'il n'y a pas de robot)
+    #   la distance au mur (= 1.0 s'il n'y a pas de robot)
     # cf. exemple ci-dessous
-    print ("[robot #",robotId,"] senseur frontal:",sensors["sensor_front"]["distance"],"(robot =",sensors["sensor_front"]["isRobot"],")")
 
-    translation = 0.5 # vitesse de translation (entre -1 et +1)
-    rotation = 0.3 # vitesse de rotation (entre -1 et +1)
+    # récupération des senseurs
+
+    sensors = get_extended_sensors(sensors)
+    print (
+        "[robot #",robotId,"] senseur frontal: (distance à l'obstacle =",sensors["sensor_front"]["distance"],")",
+        "(robot =",sensors["sensor_front"]["isRobot"],")",
+        "(distance_to_wall =", sensors["sensor_front"]["distance_to_wall"],")", # renvoie 1.0 si ce n'est pas un mur
+        "(distance_to_robot =", sensors["sensor_front"]["distance_to_robot"],")"  # renvoie 1.0 si ce n'est pas un robot
+    )
+
+    # contrôle moteur. Ecrivez votre comportement de Braitenberg ci-dessous.
+    # il est possible de répondre à toutes les questions en utilisant seulement:
+    #   sensors["sensor_front"]["distance_to_wall"]
+    #   sensors["sensor_front"]["distance_to_robot"]
+    #   sensors["sensor_front_left"]["distance_to_wall"]
+    #   sensors["sensor_front_left"]["distance_to_robot"]
+    #   sensors["sensor_front_right"]["distance_to_wall"]
+    #   sensors["sensor_front_right"]["distance_to_robot"]
+
+    translation = 0.5 # vitesse de translation (entre -1 et +1) -- A MODIFIER
+    rotation = 0.3 # vitesse de rotation (entre -1 et +1) -- A MODIFIER
+
+    # limite les valeurs de sortie entre -1 et +1
+    translation = max(-1,min(translation,1))
+    rotation = max(-1, min(rotation, 1))
 
     return translation, rotation
 
@@ -81,6 +115,7 @@ class MyController(Controller):
 
         sensors = {}
 
+        self.get_robot_id_at(0) != -1
         sensors["sensor_left"] = {"distance": self.get_distance_at(0), "isRobot": self.get_robot_id_at(0) != -1}
         sensors["sensor_front_left"] = {"distance": self.get_distance_at(1), "isRobot": self.get_robot_id_at(1) != -1}
         sensors["sensor_front"] = {"distance": self.get_distance_at(2), "isRobot": self.get_robot_id_at(2) != -1}
