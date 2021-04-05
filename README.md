@@ -3,7 +3,7 @@ UE LU3IN025 IA et Jeux, partie Robotique Autonome
 
 # Pré-requis
 
-Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/roborobo4/README.md) avant de commencer. Ce simulateur s'installe facilement sous Linux et sous MacOS en suivant les [instructions](https://github.com/nekonaute/roborobo4/blob/main/README.md).
+Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/roborobo4/) sur votre machine avant de commencer. Ce simulateur s'installe facilement sous Linux et sous MacOS en suivant les [instructions](https://github.com/nekonaute/roborobo4/blob/main/README.md).
 
 # Instructions pour les TPs et le projet
 
