@@ -11,7 +11,7 @@ Comme vu dans les cours, il s'agit d'une méthode de programmation de comporteme
 
 Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance à l'obstacle, et détecte s'il s'agit d'un autre robot ou non.
 
-En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier:
+En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier (~ligne 15, encadrée pas deux blocs de commentaire):
 
 * comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
 * comportement "va vers les murs et ignore les robots", (fichier _braitenberg_loveWall.py_, à créer)
