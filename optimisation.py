@@ -20,11 +20,13 @@ simulation_mode = 1 # Simulation mode: realtime=0, fast=1, super_fast_no_render=
 
 posInit = (400,400)
 param = []
+bestParam = []
+bestDistance = 0
 
 evaluations = 500
 
 def step(robotId, sensors, position):
-    global param, bestDistance, bestParam
+    global evaluations, param, bestParam, bestDistance
 
     # cet exemple montre comment générer au hasard, et évaluer, des stratégies comportementales
     # Remarques:
