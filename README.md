@@ -5,6 +5,14 @@ UE LU3IN025 IA et Jeux, partie Robotique Autonome
 
 Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/roborobo4/) sur votre machine avant de commencer. Ce simulateur s'installe facilement sous Linux et sous MacOS en suivant les [instructions](https://github.com/nekonaute/roborobo4/blob/main/README.md).
 
+Remarques pour une installation à la PPTI:
+- vous devez configurer le proxy: _git config --global http.proxy http://proxy:3128_
+- utilisez _conda_ (et pas _pip_)
+- ne lancez pas les commandes _sudo apt(...)_ (les paquets sont déjà installés)
+- utilisez _python3.7_, ou tout autre version strictement antérieure à la version 3.10
+- lors de la commande _conda activate roborobo_, conda demande parfois de configurer le shell avec la commande _conda init_. Ignorer cette demande, et lancez un shell _tcsh_ (ie. tapez _tcsh_ à l'invite) puis la commande _conda activate roborobo_
+- votre quota doit être suffisant pour isntaller et exécuter roborobo (env. 3.5go)
+
 Si vous êtes sous Windows, ou si pour une raison ou une autre vous n'arrivez pas à installer Roborobo sur votre distribution Linux ou MacOS, nous vous suggérons d'installer le logiciel Virtualbox, et de créer une machine virtuelle Linux Ubuntu. 
 
 # Instructions pour les TPs et le projet
