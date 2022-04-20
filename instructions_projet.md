@@ -52,12 +52,12 @@ Nous vous fournirons au début de la séance deux nouveaux fichiers:
 Pour utiliser ces nouvelles arènes, vous devez modifier le fichier _paintwars_config.py_ (ligne 4) en remplaçant _paintwars_arena.py_ par le fichier fourni _paintwars_arena_grX.py_ (exemple: _import paintwars_arena_gr4 as paintwars_arena_).
 
 On vous demandera de:
-* utiliser le script _go_tournament_final_ pour présenter les scores de votre stratégie préférée contre l'équipe _paintwars_team_champion_ pour chacun des 5 labyrinthes initiaux ainsi que les 5 labyrinthes inédits;
+* utiliser le script _go_tournament_eval_ pour présenter les scores de votre stratégie préférée contre l'équipe _paintwars_team_champion_ pour chacun des labyrinthes initiaux ainsi que les labyrinthes inédits;
 * utiliser _paintwars.py_ pour faire une démonstration des stratégies que vous avez implémentés;
 * expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base. ;
 * répondre aux questions qui pourront porter sur le code et sur les méthodes utilisées ou vues en cours.
 
-Pendant la séance (hors interview), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur les 10 labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus), et vous utiliserez le script _go_tournament_final_  pour avoir rapidement des résultats.
+Pendant la séance (hors interview), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur tous les labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus), et vous utiliserez le script _go_tournament_eval_  pour avoir rapidement des résultats.
 
 Vous reporterez les résultats du tournoi sur un document partagé prévu à cet effet.
 
