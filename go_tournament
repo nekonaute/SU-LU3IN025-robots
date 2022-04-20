@@ -1,0 +1,12 @@
+python paintwars.py 0 False 1 2> /dev/null | tail -n 1
+python paintwars.py 0 True 1 2> /dev/null | tail -n 1
+python paintwars.py 1 False 1 2> /dev/null | tail -n 1
+python paintwars.py 1 True 1 2> /dev/null | tail -n 1
+python paintwars.py 2 False 1 2> /dev/null | tail -n 1
+python paintwars.py 2 True 1 2> /dev/null | tail -n 1
+python paintwars.py 3 False 1 2> /dev/null | tail -n 1
+python paintwars.py 3 True 1 2> /dev/null | tail -n 1
+python paintwars.py 4 False 1 2> /dev/null | tail -n 1
+python paintwars.py 4 True 1 2> /dev/null | tail -n 1
+python paintwars.py 5 False 1 2> /dev/null | tail -n 1
+python paintwars.py 5 True 1 2> /dev/null | tail -n 1
