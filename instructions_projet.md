@@ -49,7 +49,7 @@ Nous vous fournirons au début de la séance deux nouveaux fichiers:
 1. _go_tournament_eval_ qui permet de lancer un tournoi sur l'ensemble des arènes initialement fournies, ainsi que de nouvelles arènes
 2. _paintwars_arena_grX.py_ qui définit de nouvelles arènes inédites. le _X_ correspond à votre numéro de groupe.
 
-Pour utiliser ces nouvelles arènes, vous devez modifier le fichier _paintwars_config.py_ (ligne 4) en remplaçant _paintwars_arena.py_ par le fichier fourni _paintwars_arena_grX.py_.
+Pour utiliser ces nouvelles arènes, vous devez modifier le fichier _paintwars_config.py_ (ligne 4) en remplaçant _paintwars_arena.py_ par le fichier fourni _paintwars_arena_grX.py_ (exemple: _import paintwars_arena_gr4_2022 as paintwars_arena_).
 
 On vous demandera de:
 * utiliser le script _go_tournament_final_ pour présenter les scores de votre stratégie préférée contre l'équipe _paintwars_team_champion_ pour chacun des 5 labyrinthes initiaux ainsi que les 5 labyrinthes inédits;
