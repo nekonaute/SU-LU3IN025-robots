@@ -34,11 +34,12 @@ Vous pouvez aussi utiliser le script _go_tournament_ qui permet de lancer 10 mat
 
 _paintwars.py_ utilise par défaut les paramètres spécifiés dans _paintwars_config.py_ (numéro d'arène, position de départ, vitesse de rendu). Cependant, il est possible de lancer _paintwars.py_ avec des paramètres en ligne de commande, comme suit:
 
-* _python paintwars.py <numero_arene> <inverser_position_de_depart> <vitesse_de_simulation>_
-** <numero_arene> : entre 0 et 5
-** <inverser_position_de_depart> : False ou True
-** <vitesse_de_simulation> : 0 (normal), 1 (rapide), 2 (très rapide, pas d'affichage)
-** Exemple: _python paintwars.py 3 True 1_
+_python paintwars.py <numero_arene> <inverser_position_de_depart> <vitesse_de_simulation>_
+
+* <numero_arene> : entre 0 et 5
+* <inverser_position_de_depart> : False ou True
+* <vitesse_de_simulation> : 0 (normal), 1 (rapide), 2 (très rapide, pas d'affichage)
+* Exemple: _python paintwars.py 3 True 1_
 
 ## Evaluation
 
@@ -56,7 +57,7 @@ On vous demandera de:
 * expliquer votre architecture à l'oral, c'est à dire l'architecture globale et les comportements de base. ;
 * répondre aux questions qui pourront porter sur le code et sur les méthodes utilisées ou vues en cours.
 
-Pendant la séance (hors interview), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur les 10 labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous utiliserez le script _go_tournament_ modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus).
+Pendant la séance (hors interview), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur les 10 labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus), et vous utiliserez le script _go_tournament_final_  pour avoir rapidement des résultats.
 
 Vous reporterez les résultats du tournoi sur un document partagé prévu à cet effet.
 
