@@ -18,7 +18,7 @@ Problèmes classiques:
   - ModuleNotFoundError: No module named 'pyroborobo'
   - ImportError: /lib/x86_64-linux-gnu/libwayland-server.so.0: undefined symbol: ffi_type_uint32, version LIBFFI_BASE_7.0
 
-=> Il s'agit d'un problème avec la version de Python (utilisez une version <=3.9). Ce problème peut se produire lors de l'activation de l'environnement conda, qui utilise une version de Python de celle du système. A priori, pas de problème si on utilise _bash_
+=> Il s'agit d'un problème avec la version de Python. Ce problème peut se produire lors de l'activation de l'environnement conda, qui utilise une version de Python différence de celle par défaut. A priori, pas de problème si on utilise _bash_. Pour être sûr, on peut ajouter la ligne suivante à la fin du fichier .bashrc (et relancer le terminal): alias pyhon='/usr/bin/python3.9'
 
 Si vous êtes sous Windows, ou si pour une raison ou une autre vous n'arrivez pas à installer Roborobo sur votre distribution Linux ou MacOS, nous vous suggérons d'installer le logiciel Virtualbox, et de créer une machine virtuelle Linux Ubuntu. 
 
