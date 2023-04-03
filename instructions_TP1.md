@@ -2,7 +2,7 @@
 
 ## Exercice 1: comportement de Braitenberg
 
-Vous devez programmer des comportements de type Braitenberg. 
+Vous devez programmer des comportements de type Braitenberg. Vous utiliserez le fichier _comportement.py_ comme template.
 
 Comme vu dans les cours, il s'agit d'une méthode de programmation de comportement reposant sur des principes simples:
 * les _effecteurs_ dépendent de la somme des activations des _senseurs_
