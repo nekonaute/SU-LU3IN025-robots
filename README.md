@@ -9,7 +9,7 @@ Remarques pour l'installation de _roborobo_ à la PPTI:
 - vous devez configurer le proxy: _git config --global http.proxy http://proxy:3128_
 - utilisez _conda_ (et pas _pip_)
 - ne lancez pas les commandes _sudo apt(...)_ (les paquets sont déjà installés)
-- utilisez _python3.7_, ou tout autre version strictement antérieure à la version 3.10. Attention à bien vérifier que la version de python est correcte dans l'environnement conda. 
+- utilisez _python3.9_, ou tout autre version strictement antérieure à la version 3.10. Attention à bien vérifier que la version de python est correcte dans l'environnement conda. 
 - lors de la commande _conda activate roborobo_, conda demande parfois de configurer le shell avec la commande _conda init_. Utilisez _conda init bash_ (puis quitter/relancer le shell). (2023/4/3: problème avec tcsh)
 - votre quota doit être suffisant pour installer et exécuter roborobo (env. 3.5go)
 
