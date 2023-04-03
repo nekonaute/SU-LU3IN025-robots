@@ -1,4 +1,6 @@
 # rappel: utilisez python3.7 python3.8 ou 3.9 (pas >=3.10)
+# si rien ne s'affiche dans le terminal: probleme de version de python
+python --version
 python paintwars.py 0 False 1 2> /dev/null | tail -n 1
 python paintwars.py 0 True 1 2> /dev/null | tail -n 1
 python paintwars.py 1 False 1 2> /dev/null | tail -n 1
