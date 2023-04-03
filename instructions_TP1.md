@@ -2,7 +2,7 @@
 
 ## Exercice 1: comportement de Braitenberg
 
-Vous devez programmer des comportements de type Braitenberg. Vous utiliserez le fichier _comportement.py_ comme template.
+Vous devez programmer des comportements de type Braitenberg. 
 
 Comme vu dans les cours, il s'agit d'une méthode de programmation de comportement reposant sur des principes simples:
 * les _effecteurs_ dépendent de la somme des activations des _senseurs_
@@ -11,7 +11,7 @@ Comme vu dans les cours, il s'agit d'une méthode de programmation de comporteme
 
 Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translation, et la vitesse de rotation) et les senseurs donnent la distance au mur ou au robot le plus proche (1.0 si absent). Cf. exemple dans le code.
 
-En partant du code disponible dans le fichier comportement (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier. Seules les deux lignes marquées "_A MODIFIER_" doivent être changées.
+En partant du code disponible dans le fichier _comportement.py_ (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier. Seules les deux lignes marquées "_A MODIFIER_" doivent être changées.
 
 * comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
 * comportement "va vers les murs et ignore les robots", (fichier _braitenberg_loveWall.py_, à créer)
