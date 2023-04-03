@@ -9,9 +9,15 @@ Remarques pour l'installation de _roborobo_ à la PPTI:
 - vous devez configurer le proxy: _git config --global http.proxy http://proxy:3128_
 - utilisez _conda_ (et pas _pip_)
 - ne lancez pas les commandes _sudo apt(...)_ (les paquets sont déjà installés)
-- utilisez _python3.7_, ou tout autre version strictement antérieure à la version 3.10
-- lors de la commande _conda activate roborobo_, conda demande parfois de configurer le shell avec la commande _conda init_. Ignorer cette demande, et lancez un shell _tcsh_ (ie. tapez _tcsh_ à l'invite) puis la commande _conda activate roborobo_ (il peut être nécessaire de faire un _conda init tcsh_, et de quitter/revenir dans le shell tcsh)
+- utilisez _python3.7_, ou tout autre version strictement antérieure à la version 3.10. Attention à bien vérifier que la version de python est correcte dans l'environnement conda. 
+- lors de la commande _conda activate roborobo_, conda demande parfois de configurer le shell avec la commande _conda init_. Utilisez _conda init bash_ (puis quitter/relancer le shell). 
 - votre quota doit être suffisant pour installer et exécuter roborobo (env. 3.5go)
+
+Problèmes classiques:
+- lors du lancement d'un exemple: 
+  - ModuleNotFoundError: No module named 'pyroborobo'
+  - ImportError: /lib/x86_64-linux-gnu/libwayland-server.so.0: undefined symbol: ffi_type_uint32, version LIBFFI_BASE_7.0
+  => Problème avec la version de Python (utilisez une version <=3.9). 
 
 Si vous êtes sous Windows, ou si pour une raison ou une autre vous n'arrivez pas à installer Roborobo sur votre distribution Linux ou MacOS, nous vous suggérons d'installer le logiciel Virtualbox, et de créer une machine virtuelle Linux Ubuntu. 
 
