@@ -27,7 +27,7 @@ Un inconvénient du programme précédent vient du fait que la condition initial
 En partant du programme précédent (créez un fichier _randomsearch2.py_), modifier le code afin que chaque comportement soit évalué _3_ fois, en tirant aléatoirement l'orientation initiale à chaque fois. Le score d'un comportement sera la somme de ces 3 évaluations.
 
 Remarque: 
-* vous pouvez aussi, si vous le souhaitez, faire varier la position de départ (éviter de positionner votre robot dans un mur quand même).
+* vous pouvez aussi, si vous le souhaitez, faire varier la position de départ (éviter de positionner votre robot dans un mur).
 
 ## Exercice 3: algorithme génétique
 
