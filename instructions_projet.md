@@ -6,9 +6,19 @@ Deux équipes de 8 robots ("red team" et "blue team") s'affrontent pour visiter 
 
 Executez le fichier _paintwars.py_ pour avoir un aperçu du projet.
 
-Pour commencer, n'hésitez pas à réutiliser les comportements déjà obtenus dans les TP1 et TP2. Dans votre architecture de comportement finale, il est demandé d'avoir _au moins_ un comportement type Braitenberg _et_ un comportement obtenu précédemment par algorithme génétique.
+Pour commencer, n'hésitez pas à réutiliser les comportements déjà obtenus dans les TP1 et TP2. Dans votre architecture de comportement finale, il est demandé d'avoir _a minima_:
+* une achitecture de subsomption ou une arbre de comportement
+* _au moins_ deux comportements type Braitenberg
+* optionnel: un comportement de Braitenberg dont les poids ont été optimisé au préalable par algorithme génétique
 
-Tout les coups sont permis, tant que votre code tient exlusivement dans la fonction _step_ du fichier _paintwars_team_challenger_ (pas de mémoire, pas de communication, pas d'information supplémentaire que celles données par les senseurs, etc.).
+Tout les coups sont permis, tant que votre code tient exlusivement dans la fonction _step_ du fichier _paintwars_team_challenger_ et que vous respectez les contraintes suivantes:
+* la mémoire autorisée d'un step à l'autre limité **un seul et unique entier** par robot. Par exemple pour faire un compteur ou une variable d'état pour alterner entre plusieurs comportements.
+* chaque robot peut connaître sont identifiant (robotId), ce qui permet éventuellement de spécialiser chaque robot de votre équipe. Attention: le 1e robot de l'équipe 1 a l'identifiant 0, le 1er robot de l'équipe 2 a l'identifiant 4 (si chaque équipe a 4 robots). Astuce: utilisez robotId%4 pour connaitre votre place dans votre équipe.
+* pas de communication
+* pas d'information supplémentaire que celles données par les senseurs
+* pas de construction ou d'utilisation de cartes
+
+N'hésitez pas à reprendre la fonction _get_extended_sensors(sensors)_ de _comportement.py_ si vous pensez que cela vous simplifiera la vie. Cependant le code donné dans _paintwars.py_ est plus complet (distingue murs et robots, permet de savoir si un robot est de la même équipe). 
 
 ## Fichiers
 
@@ -59,6 +69,6 @@ On vous demandera de:
 
 Pendant la séance (hors interview), vous devrez vous coordonner avec les autres groupes de votre séance pour faire un tournoi. Chaque groupe devra rencontrer le maximum de groupes adversaires, sur tous les labyrinthes (2 matches par labyrinthe, en variant la position de départ). Pour cela, vous modifierez _paintwars_config.py_ pour faire s'affronter les deux équipes (i.e. une équipe jouera les bleus), et vous utiliserez le script _go_tournament_eval_  pour avoir rapidement des résultats.
 
-Vous reporterez les résultats du tournoi sur un document partagé prévu à cet effet.
+Vous reporterez les résultats du tournoi sur un document partagé qui vous sera donné en début de séance.
 
 Le dernier _git push_ de votre projet avant le début de la séance d'évaluation sera pris en compte comme rendu.
