@@ -9,7 +9,9 @@ Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/r
 
 Après avoir installé [**Roborobo**](https://github.com/nekonaute/roborobo4/), vous devez:
 - cloner ce dépôt : _git clone https://github.com/nekonaute/SU-LU3IN025-robots.git_
-- pour tester: _python comportement.py_
+- pour tester:
+  - _conda activate roborobo_
+  - _python comportement.py_
 
 # Remarques spécifique à l'utilisation à la PPTI
 
