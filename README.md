@@ -3,7 +3,15 @@ UE LU3IN025 IA et Jeux, partie Robotique Autonome
 
 # Pré-requis
 
-Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/roborobo4/) sur votre machine avant de commencer. Ce simulateur s'installe facilement sous Linux et sous MacOS en suivant les [instructions](https://github.com/nekonaute/roborobo4/blob/main/README.md).
+Vous devez installer le simulateur [**Roborobo**](https://github.com/nekonaute/roborobo4/) sur votre machine avant de commencer. Ce simulateur s'installe facilement sous Linux et sous MacOS en suivant les [instructions](https://github.com/nekonaute/roborobo4/blob/main/README.md). Si vous souhaitez l'utiliser sous Windows, il est suggéré d'utiliser une machine virtuelle (éventuellement fourni par le/la chargé/e de TP).
+
+# Installation
+
+Après avoir installé [**Roborobo**](https://github.com/nekonaute/roborobo4/), vous devez:
+- cloner ce dépôt : _git clone https://github.com/nekonaute/SU-LU3IN025-robots.git_
+- pour tester: _python comportement.py_
+
+# Remarques spécifique à l'utilisation à la PPTI
 
 Remarques pour l'installation de _roborobo_ à la PPTI:
 - vous devez configurer le proxy: _git config --global http.proxy http://proxy:3128_
