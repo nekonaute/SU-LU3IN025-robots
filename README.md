@@ -10,7 +10,7 @@ Remarques pour l'installation de _roborobo_ à la PPTI:
 - utilisez _conda_ (et pas _pip_)
 - ne lancez pas les commandes _sudo apt(...)_ (les paquets sont déjà installés)
 - lors de la commande _conda activate roborobo_, conda demande parfois de configurer le shell avec la commande _conda init_. Utilisez _conda init bash_ (puis quitter/relancer le shell). (2023/4/3: problème avec tcsh)
-- utilisez une version de Python strictement différente de la version 3.10 (ex.: _python3.9_ si présente). Attention à bien vérifier que la version de python est correcte dans l'environnement conda, par rapport à celle accessible par défaut en ligne. 
+- utilisez une version de Python strictement différente de la version 3.10 (ex.: _python3.9_ si présente). Attention à bien vérifier que la version de python est correcte dans l'environnement conda, par rapport à celle accessible par défaut en ligne de commande. 
 - votre quota doit être suffisant pour installer et exécuter roborobo (env. 3.5go)
 
 Problèmes classiques : voir la section [**Trouble Shooting**](https://github.com/nekonaute/roborobo4/blob/main/README.md) de Roborobo (tout en bas de la page).
