@@ -13,7 +13,7 @@ Pour cet exercice, les effecteurs sont au nombre de 2 (la vitesses de translatio
 
 En partant du code disponible dans le fichier _comportement.py_ (que vous copierez), vous devez programmer les comportements suivants en modifiant uniquement la fonction _step_ en début de fichier. Seules les deux lignes marquées "_A MODIFIER_" doivent être changées.
 
-* comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer).
+* comportement "évite les obstacles (murs et robots)" (fichier _braitenberg_avoider.py_, à créer - modifiez ensuite le code présent pour utiliser plus de deux senseurs).
 * comportement "va vers les murs et ignore les robots", (fichier _braitenberg_loveWall.py_, à créer)
 * comportement "évite les murs et ignore les robots", (fichier _braitenberg_hateWall.py_, à créer)
 * comportement "va vers les robots et ignore les murs" (fichier _braitenberg_loveBot.py_, à créer)
