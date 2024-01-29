@@ -13,7 +13,9 @@ Le score d'un individu dépend de la distance euclidienne parcourue en 400 itér
 Créez le fichier _randomsearch.py_ (en copiant _optimisation.py_), puis modifiez le comme suit:
 * utilisez la variable _evaluations_ déjà créée pour fixer le nombre de comportements générés aléatoirement et évalués.
 * à chaque fois qu'un comportement est meilleur que les précédents, sauvegardez-le (score, valeur des paramètres et _itération_ ou il a été créé).
-* après avoir épuisé le budget d'évaluations, rejouez le meilleur comportement trouvé pendant _1000_ itérations, puis recommencez (i.e. le meilleur comportement est réévalué à l'infini).
+* fixer le nombre de stratégies testées à 500 avant d'arréter.
+
+Après avoir épuisé le budget d'évaluations, rejouez le meilleur comportement trouvé pendant _1000_ itérations, puis recommencez (i.e. le meilleur comportement est montré à l'infini).
 
 Remarques:
 * la variable _simulation_mode_ permet de régler la vitesse de la simulation au démarrage. Pratique pour faire une recherche rapide (valeur 1, voire 2).
