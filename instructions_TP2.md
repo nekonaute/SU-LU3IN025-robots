@@ -37,21 +37,19 @@ Créez le fichier _genetic_algorithms.py_ (en copiant le précédent) et implém
 
 C'est à dire qu'à chaque génération un seul enfant est créé à partir du parent en modifiant la valeur d'un seul paramètre. Si l'enfant est meilleur que le parent, alors il remplace le parent. Sinon, le parent est conservé (et l'enfant effacé).  
 
-Pour un nombre d'_itérations_ identique, comparez les résultats obtenus par la recherche aléatoire et la recherche par algorithme génétique. Pour chaque méthode, vous tracerez un graphe compilant les résultats de 10 essais indépendants.
-
 ## Exercice 4: affichage et comparaison des résultats 
 
-Modifiez les codes que vous venez d'écrire pour les questions 2 et 3 afin de sauvegarder dans un fichier les informations suivantes pour chaque évaluation:
-* numéro de l'itération à partir duquel le comportement actuel est testé 
+Pour un nombre d'_itérations_ identique, comparez les résultats obtenus par la recherche aléatoire et la recherche par algorithme génétique. Pour chaque méthode, vous tracerez un graphe compilant les résultats de 10 essais indépendants. Pour cela, modifiez les codes que vous venez d'écrire pour les questions 2 et 3 afin de sauvegarder dans un fichier les informations suivantes pour chaque évaluation:
+
+* numéro de l'évaluation à partir duquel le comportement actuel est testé 
 * score du comportement actuel
 * meilleur score obtenu depuis le début
-* valeurs des meilleurs paramètres
 
-Cela donnera par exemple (si chaque comportement est testé pendant 400 itérations):
+Cela donnera par exemple:
 * 0, 225.3660952, 225.3660952
-* 400, 199.618627164, 225.3660952
-* 800, 80.8005718674, 225.3660952
-* 1200, 642.2593266, 642.2593266 
+* 1, 199.618627164, 225.3660952
+* 2, 80.8005718674, 225.3660952
+* 3, 642.2593266, 642.2593266 
 * _etc._
 
 Dans le répertoire _multiplotCSV_, vous trouverez un script permettant de tracer un graphique (consultez le fichier _aide.txt_). Utilisez-le pour:
@@ -60,6 +58,7 @@ Dans le répertoire _multiplotCSV_, vous trouverez un script permettant de trace
 
 Remarques:
 * Plutôt que de sauvegarder directement les informations demandées dans un fichier, vous pouvez aussi les afficher dans le terminal, et les copier manuellement dans un fichier.
+* en plus des infos demandées, vous pouvez ajouter sur chaque ligne les valeurs des meilleurs paramètres trouvés jusqu'ici. Cela permet ensuite de pouvoir les rejouer si besoin.
 
 ## Quelques idées pour le projet
 
