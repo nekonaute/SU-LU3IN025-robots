@@ -227,7 +227,7 @@ def main():
         #        world_model_class=PyWorldModel,
         agent_observer_class=MyAgentObserver,
         object_class_dict={}
-        ,override_conf_dict={"gInitialNumberOfRobots": number_of_robots, "gDisplayMode": simulation_mode}
+        ,override_conf_dict={"gInitialNumberOfRobots": number_of_robots, "gDisplayMode": simulation_mode, "gVerbose": False}
     )
 
     rob.start()
