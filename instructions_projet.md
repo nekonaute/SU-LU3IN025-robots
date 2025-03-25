@@ -12,7 +12,7 @@ Pour commencer, n'hésitez pas à réutiliser les comportements déjà obtenus d
 * optionnel: un comportement de Braitenberg dont les poids ont été optimisé au préalable par algorithme génétique
 
 Tout les coups sont permis, tant que votre code tient exlusivement dans la fonction _step_ du fichier _paintwars_team_challenger_ et que vous respectez les contraintes suivantes:
-* la mémoire autorisée d'un step à l'autre limité **un seul et unique entier** par robot. Par exemple pour faire un compteur ou une variable d'état pour alterner entre plusieurs comportements.
+* la mémoire autorisée d'un step à l'autre est limitée à **un seul et unique entier** par robot. Par exemple pour faire un compteur ou une variable d'état pour alterner entre plusieurs comportements.
 * chaque robot peut connaître sont identifiant (robotId), ce qui permet éventuellement de spécialiser chaque robot de votre équipe. Attention: le 1e robot de l'équipe 1 a l'identifiant 0, le 1er robot de l'équipe 2 a l'identifiant 4 (si chaque équipe a 4 robots). Astuce: utilisez robotId%4 pour connaitre votre place dans votre équipe.
 * pas de communication
 * pas d'information supplémentaire que celles données par les senseurs
