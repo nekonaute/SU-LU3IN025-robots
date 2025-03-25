@@ -1,4 +1,4 @@
-# SU-LU3IN025-robots
+# SU-LU3IN025-robots (2021-2024)
 UE LU3IN025 IA et Jeux, partie Robotique Autonome
 
 # Pré-requis
